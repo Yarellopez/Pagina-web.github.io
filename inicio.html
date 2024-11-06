@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ética en la Ingeniería Informática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .header {
+            background-color: #007b3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 60%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="imagenUni.png.jpeg" alt="Logo de la Empresa" style="max-width: 100%; height: auto;">
+        <h1>UNIVERSIDAD NACIONAL DE INGENIERÍA</h1>
+    <h2>FACULTAD DE CIENCIAS Y SISTEMAS</h2>
+    <h3>INGENIERÍA DE SISTEMAS</h3>
+        <nav>
+            <button onclick="mostrarSeccion('introducción')">Información del tema</button>
+            <button onclick="mostrarSeccion('ejercicio')">Ejercicio</button>
+            <button onclick="mostrarSeccion('autores')">Autores</button>
+        </nav>
+    </div>
+
+    <!-- Sección de Introducción -->
+    <section id="introducción" class="contenido">
+        <div class="container">
+            <h1>Ética en la Ingeniería Informática</h1>
+            <h2>Introducción</h2>
+            <p>En la era digital actual, la tecnología se ha convertido en un elemento indispensable de nuestras vidas. Desde el momento en que despertamos hasta que nos acostamos, interactuamos con dispositivos, plataformas y sistemas que recopilan, procesan y comparten nuestra información. En este contexto, la ética en la ingeniería informática ha cobrado una importancia fundamental.</p>
+            <p>Los profesionales de esta área tienen una gran responsabilidad al diseñar y mantener sistemas que impactan directamente en la vida de millones de personas, abarcando la protección de datos, desarrollo de IA ética y redes sociales que respeten la privacidad y la verdad.</p>
+            <h2>¿Qué es la Ética de la Tecnología?</h2>
+            <p>La ética de la tecnología se refiere a un conjunto de principios y normas que orientan el diseño, desarrollo, implementación y uso de tecnología para respetar los derechos humanos, dignidad, privacidad, seguridad y bienestar tanto de las personas como del planeta. No es algo estático, sino que debe adaptarse al contexto social, cultural y temporal en el que se aplica, involucrando no solo a desarrolladores, sino también a usuarios, reguladores y la sociedad civil.</p>
+            <h2>¿Por qué es Importante?</h2>
+            <p>La tecnología tiene un impacto significativo en todos los ámbitos de la vida humana: desde la comunicación, el trabajo, la educación y la salud hasta la economía, el medio ambiente y la cultura. Si bien representa oportunidades y progreso, también puede presentar riesgos, desigualdades y conflictos. Por ello, es esencial que su uso y desarrollo se guíen por principios éticos que contribuyan al bien común y al desarrollo humano sostenible.</p>
+            <h2>¿Cómo Podemos Promover una Ética de la Tecnología?</h2>
+            <p>Desde la experiencia en ingeniería informática, existen enfoques clave para fomentar una ética en la tecnología:</p>
+            <ul>
+                <li><strong>Diseño centrado en las personas:</strong> Crear soluciones que respondan a necesidades reales, considerando expectativas, valores y garantizando la accesibilidad y usabilidad.</li>
+                <li><strong>Transparencia y rendición de cuentas:</strong> Proporcionar información clara sobre el funcionamiento, objetivos y riesgos de las tecnologías.</li>
+                <li><strong>Participación y diálogo:</strong> Involucrar a todos los actores en la creación e implementación tecnológica para asegurar respeto y confianza en los resultados.</li>
+                <li><strong>Educación y formación:</strong> Desarrollar competencias digitales críticas y fomentar una cultura ética en el desarrollo tecnológico.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de Ejercicios -->
+    <section id="ejercicio" class="contenido" style="display:none;">
+        <div class="container">
+            <h2>Ejercicio</h2>
+            <h3>¿Considera que el código ético en una empresa de sistemas es fundamental para garantizar un entorno laboral responsable?</h3>
+            <form id="formEjercicio">
+                <input type="radio" id="si" name="codigoEtico" value="si">
+                <label for="si">Sí</label><br>
+                <input type="radio" id="no" name="codigoEtico" value="no">
+                <label for="no">No</label><br><br>
+    
+                <h3>¿Quién debe ser el principal responsable de aplicar el código de conducta en la empresa?</h3>
+                <input type="checkbox" id="directivo" name="responsables" value="directivo">
+                <label for="directivo">Directivo</label><br>
+                <input type="checkbox" id="gerente" name="responsables" value="gerente">
+                <label for="gerente">Gerente</label><br>
+                <input type="checkbox" id="empleado" name="responsables" value="empleado">
+                <label for="empleado">Empleado</label><br>
+                <input type="checkbox" id="otro" name="responsables" value="otro">
+                <label for="otro">Otro</label><br><br>
+    
+                <h3>¿Qué principio ético es esencial en la ingeniería de sistemas para proteger la privacidad de los usuarios?</h3>
+                <select id="principioEtico" name="principioEtico">
+                    <option value="">Selecciona una opción</option>
+                    <option value="a">Autonomía</option>
+                    <option value="b">Confidencialidad</option>
+                    <option value="c">Justicia</option>
+                    <option value="d">Beneficencia</option>
+                </select><br><br>
+    
+                <h3>¿Qué acciones debería tomar un ingeniero en sistemas cuando detecta una vulnerabilidad en un sistema que podría comprometer la seguridad de los datos de los usuarios?</h3>
+                <select id="accionEtica" name="accionEtica">
+                    <option value="">Selecciona una opción</option>
+                    <option value="a">Ignorar la vulnerabilidad y continuar trabajando.</option>
+                    <option value="b">Informar a los responsables y ayudar a corregirla.</option>
+                    <option value="c">Divulgar la vulnerabilidad públicamente antes de avisar a la empresa.</option>
+                    <option value="d">No tomar ninguna acción.</option>
+                </select><br><br>
+    
+                <button type="button" onclick="evaluarRespuestas()">Enviar Respuestas</button>
+            </form>
+    
+            <div id="resultado" style="margin-top: 20px;"></div>
+        </div>
+    </section>
+    
+    <script>
+        function evaluarRespuestas() {
+            let puntaje = 0;
+            const resultados = [];
+    
+            // Respuestas correctas
+            const respuestasCorrectas = {
+                codigoEtico: "si", // Respuesta correcta: "Sí"
+                responsables: ["directivo", "gerente", "empleado"], // Respuestas correctas: Directivo, Gerente y Empleado
+                principioEtico: "b", // Respuesta correcta: "Confidencialidad"
+                accionEtica: "b" // Respuesta correcta: "Informar a los responsables y ayudar a corregirla"
+            };
+    
+            // Evaluar la primera pregunta
+            const codigoEtico = document.querySelector('input[name="codigoEtico"]:checked');
+            if (codigoEtico && codigoEtico.value === respuestasCorrectas.codigoEtico) {
+                puntaje++;
+                resultados.push("Respuesta 1: Correcta");
+            } else {
+                resultados.push("Respuesta 1: Incorrecta");
+            }
+    
+            // Evaluar la segunda pregunta
+            const responsables = Array.from(document.querySelectorAll('input[name="responsables"]:checked')).map(input => input.value);
+            if (responsables.length > 0 && responsables.every(res => respuestasCorrectas.responsables.includes(res))) {
+                puntaje++;
+                resultados.push("Respuesta 2: Correcta");
+            } else {
+                resultados.push("Respuesta 2: Incorrecta");
+            }
+    
+            // Evaluar la tercera pregunta
+            const principioEtico = document.getElementById("principioEtico").value;
+            if (principioEtico === respuestasCorrectas.principioEtico) {
+                puntaje++;
+                resultados.push("Respuesta 3: Correcta");
+            } else {
+                resultados.push("Respuesta 3: Incorrecta");
+            }
+    
+            // Evaluar la cuarta pregunta
+            const accionEtica = document.getElementById("accionEtica").value;
+            if (accionEtica === respuestasCorrectas.accionEtica) {
+                puntaje++;
+                resultados.push("Respuesta 4: Correcta");
+            } else {
+                resultados.push("Respuesta 4: Incorrecta");
+            }
+    
+            // Mostrar resultados
+            const resultadoDiv = document.getElementById("resultado");
+            resultadoDiv.innerHTML = `<h3>Resultados:</h3><p>${resultados.join('<br>')}</p><p>Puntaje Final: ${puntaje} de 4</p>`;
+        }
+    </script>
+
+    <!-- Sección de Autores -->
+    <section id="autores" class="contenido" style="display:none;">
+        <div class="container">
+            <h2>Autores</h2>
+            <p>Este proyecto fue desarrollado por Yarel Eleazar López Ortez y está basado en investigaciones de varias fuentes. A continuación, se citan algunos de los recursos y autores consultados:</p>
+            <ul>
+                <li><em>Ética para ingenieros</em><a href="https://www.ingenieros.cl/la-etica-en-la-ingenieria-informatica/"> Introduccion</a> </li>
+                <li><em>Principios éticos en la ingeniería de sistemas</em>, Revista de Ética y Tecnología.</li>
+                <li>Artículos de <a href="https://tallerdeeticacuriellopezitzelvanessa.blogspot.com/2018/02/cual-es-la-importancia-de-la-etica-en.html">ejemplo.com</a> sobre conducta y responsabilidad en la ingeniería.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Proyecto de Ética en Ingeniería de Sistemas - 2024</p><br></br>
+        <p>Elaborado Por:</p>
+        <p href="https://www.facebook.com/yarel.lopez.37">Yarel Eleazar López Ortez</p>
+    </footer>
+
+    <script>
+        function mostrarSeccion(seccion) {
+            // Ocultar todas las secciones
+            document.getElementById('introducción').style.display = 'none';
+            document.getElementById('ejercicio').style.display = 'none';
+            document.getElementById('autores').style.display = 'none';
+
+            // Mostrar la sección seleccionada
+            document.getElementById(seccion).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
